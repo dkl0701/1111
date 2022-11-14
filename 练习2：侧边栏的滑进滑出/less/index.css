@@ -1,0 +1,71 @@
+/* 清除默认边距 */
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  font-size: 10px;
+}
+.box {
+  width: 37.5rem;
+  min-width: 25rem;
+  margin: 0 auto;
+}
+.box > div {
+  height: 100vh;
+  position: relative;
+}
+.box > div > img {
+  width: 100%;
+}
+.box > div > .box_user {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+.box > div > .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.3;
+  display: none;
+}
+.box > div > .text {
+  position: absolute;
+  top: 0;
+  left: -40rem;
+  width: 65%;
+  height: 100%;
+  background-color: #555555;
+  transition: 0.5s;
+}
+.box > div > .text > p:nth-of-type(1) {
+  width: 100%;
+  height: 20rem;
+  padding-top: 2.5rem;
+  float: left;
+}
+.box > div > .text > p:nth-of-type(1) img {
+  width: 60%;
+}
+.box > div > .text > p {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 7rem;
+  border-bottom: 0.1rem #adadad solid;
+}
